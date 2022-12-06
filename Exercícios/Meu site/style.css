@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor1: #766E95;
+    --cor2: #32222D;
+    --cor3: #151329;  
+    
+    --fonte-padrao: Arial, Verdana, sans-serif;
+    --fonte-destaque: 'Bebas Neve',coursive;
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body {
+    background-color: #766E95;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/*
+background-color: #3C63EE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./assets/background.png);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    animation: animatedBackground 20s linear infinite;
+*/
+
+header img {
+    min-height: 100px;
+    height: 200px;
+    max-height: 200px;
+    width: auto;
+    margin: 20px 0;
+    border-radius: 100%;
+    border:8px solid var(--cor2)
+}
+
+header > h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-destaque);
+    
+}
+
+main > a {
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    background-color: #32222D;
+    color: white;
+    width: solid;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    padding: 20px 100px;
+    border-radius: 20px 0;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.507);
+    transition-duration: 0.5s;
+}
+
+main > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor3)
+}
+
+footer h1 {
+    color: var(--cor3);
+    font-family:var(--fonte-padrao);
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
